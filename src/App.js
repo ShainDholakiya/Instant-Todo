@@ -152,8 +152,8 @@ function Main() {
         </form>
       </div>
       <div style={{}}>
-      <h2 style={{textAlign: "left"}}>{goals && goals[selectedGoal].title}</h2>
-      {goals && goals[selectedGoal].todos.map((todo) => (
+      <h2 style={{textAlign: "left"}}>{goals && goals[selectedGoal]?.title}</h2>
+      {goals && goals[selectedGoal]?.todos.map((todo) => (
           <div style={{marginBottom: "1rem", padding: "0.5rem", backgroundColor: "white",  width: "400px", borderRadius: "10px"}}>
             <p key={todo.id} style={{ textAlign: "left"}}>{todo.title}</p>
           </div>
